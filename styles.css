@@ -1,0 +1,123 @@
+body{
+    background-color:gray;
+    width: 100vw;
+    margin: 0%;
+    
+}
+.main_container{
+        
+        font-family: Arial, sans-serif;
+        background-color:gray;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: start;
+}
+.container1 {
+    
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: 40px;
+}
+
+p{
+    text-align: center;
+    margin:5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: 30px;
+}
+P:hover{
+    text-shadow:0 0 10px #f2f2f2;
+}
+
+h1:hover{
+    text-shadow:0 0 10px #f2f2f2;
+}
+.container2{
+    
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: 420px;
+    overflow-y: scroll;
+}
+
+.info th{
+    padding-right: 50px;
+}
+
+
+form{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+button:hover{
+    background-color: aqua;
+}
+#updateBtn {
+    background-color: #007bff;
+    color: white;
+}
+#updateBtn:hover{
+    background-color: aqua;
+}
+button:hover {
+    opacity: 0.9;
+}
+
+table {
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #007bff;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.action-group {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+}
