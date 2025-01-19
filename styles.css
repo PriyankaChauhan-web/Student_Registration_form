@@ -1,9 +1,12 @@
+/*css code*/
+
 body{
     background-color:gray;
     width: 100vw;
     margin: 0%;
     
 }
+/* main container*/
 .main_container{
         
         font-family: Arial, sans-serif;
@@ -60,7 +63,7 @@ h1:hover{
     padding-right: 50px;
 }
 
-
+/*form*/
 form{
     background-color: #fff;
     padding: 20px;
@@ -100,7 +103,7 @@ button:hover{
 button:hover {
     opacity: 0.9;
 }
-
+/*table*/
 table {
     border-collapse: collapse;
 }
@@ -121,3 +124,5 @@ tr:nth-child(even) {
     gap: 2px;
     justify-content: center;
 }
+
+

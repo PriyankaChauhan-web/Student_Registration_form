@@ -5,60 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Student Registration Form</title>
 </head>
 
 <body>
+    <!--html code-->
+    
+    <!--student form section-->
     <section class="student form">
         <h1>Student Registration Form</h1>
         <p>A Student Registration Form is a versatile tool designed to streamline the process of enrolling students in
             academic programs</p>
+        <!--main section-->
         <article class="main_container">
+            <!--container1-->
             <div class="container1">
-
+                <!--student form-->
                 <form id="studentForm">
                     <h3>Add/Update Student</h3>
                     <label>Student Name:</label><br>
                     <input type="text" id="studentName" required><br>
-            
+
                     <label>Student ID:</label><br>
                     <input type="text" id="studentId" required><br>
-            
+
                     <label>Email:</label><br>
                     <input type="email" id="studentEmail" required><br>
-            
+
                     <label>Contact Number:</label><br>
                     <input type="text" id="studentContact" required><br>
-            
+
                     <button type="submit">Add Student</button>
                     <button type="button" id="updateBtn" disabled>Update Student</button>
                 </form>
-                   
+
 
             </div>
-        
-        
+
+            <!--container 2-->
             <div class="container2">
-                
-                    <table id="studentTable">
-                        <thead>
-                            <tr class="info">
-                                <th>Name</th>
-                                <th>ID</th>
-                                <th>Email</th>
-                                <th>Contact</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
-                          
-            
+                <!--student table-->
+                <table id="studentTable">
+                    <thead>
+                        <tr class="info">
+                            <th>Name</th>
+                            <th>ID</th>
+                            <th>Email</th>
+                            <th>Contact</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+
         </article>
     </section>
-    <script src="script.js"></script>
+
 </body>
 
 </html>

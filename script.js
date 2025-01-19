@@ -1,9 +1,12 @@
+// javascript code
 let students = [];
 let editIndex = null;
 
 document.addEventListener('DOMContentLoaded', loadData);
 document.getElementById('studentForm').addEventListener('submit', addStudent);
 document.getElementById('updateBtn').addEventListener('click', updateStudent);
+
+//function addstudent section
 
 function addStudent(e) {
     e.preventDefault();
@@ -24,6 +27,8 @@ function addStudent(e) {
     resetForm();
 }
 
+// editstudent section
+
 function editStudent(index) {
     const student = students[index];
     document.getElementById('studentName').value = student.name;
@@ -33,6 +38,8 @@ function editStudent(index) {
     document.getElementById('updateBtn').disabled = false;
     editIndex = index;
 }
+
+// updatestudent section
 
 function updateStudent() {
     const name = document.getElementById('studentName').value;
@@ -44,7 +51,7 @@ function updateStudent() {
     renderTable();
     resetForm();
 }
-
+// deletestudent section
 function deleteStudent(index) {
     students.splice(index, 1);
     saveData();
@@ -68,7 +75,7 @@ function addRow(student, index) {
 
     tbody.appendChild(row);
 }
-
+// render table section
 function renderTable() {
     const tbody = document.querySelector('#studentTable tbody');
     tbody.innerHTML = '';
@@ -76,7 +83,7 @@ function renderTable() {
 }
 
 function saveData() {
-    localStorage.setItem('students', JSON.stringify(students)); 
+    localStorage.setItem('students', JSON.stringify(students));
 }
 
 function loadData() {
@@ -88,7 +95,7 @@ function loadData() {
         console.error('Error loading data', error);
     }
 }
-
+// resetform section
 function resetForm() {
     document.getElementById('studentForm').reset();
     document.getElementById('updateBtn').disabled = true;
