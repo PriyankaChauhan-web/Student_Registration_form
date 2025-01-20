@@ -3,8 +3,6 @@ let students = [];
 let editIndex = null;
 
 document.addEventListener('DOMContentLoaded', loadData);
-document.getElementById('studentForm').addEventListener('submit', addStudent);
-document.getElementById('updateBtn').addEventListener('click', updateStudent);
 
 //function addstudent section
 
@@ -87,6 +85,9 @@ function saveData() {
 }
 
 function loadData() {
+    document.getElementById('studentForm').addEventListener('submit', addStudent);
+    document.getElementById('updateBtn').addEventListener('click', updateStudent);
+
     try {
         const data = JSON.parse(localStorage.getItem('students')) || [];
         students = data;
